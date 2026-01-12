@@ -29,7 +29,7 @@ int main()
     double exact_val = exact(x);
 
     ofstream file("error_data.txt");
-    file << "# h  error_Oh2  error_Oh4  error_Richardson\n";
+    file << "# h  error_Oh2  error_Oh4  error_Richardson\n";//
 
     vector<double> D(N);
 
