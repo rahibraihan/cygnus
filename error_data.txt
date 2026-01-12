@@ -1,4 +1,4 @@
-# h  error_Oh2  error_Oh4  error_Richardson
+ # h  error_Oh2  error_Oh4  error_Richardson
 0.1 0.000900054 1.79886e-006 1.12529e-007
 0.05 0.000225098 1.12529e-007 7.03466e-009
 0.025 5.62797e-005 7.03466e-009 4.39691e-010
