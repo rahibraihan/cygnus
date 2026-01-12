@@ -2,6 +2,7 @@
 set terminal png size 800,600
 set output "error_plot.png"
 
+
 # Log-log scale
 set logscale xy
 
