@@ -12,23 +12,9 @@ https://github.com/rahibraihan/cygnus.git
 ## 📌 What We Did
 
 ### 1️ Second-Order Central Difference Method (O(h²))
-
-#include <stdio.h>
-#include <math.h>
-
-double f(double x) {
-    return x * x;
-}
-
-int main() {
-    double x = 2.0, h = 0.001;
-    double derivative;
-
-    derivative = (f(x + h) - f(x - h)) / (2 * h);
-
-    printf("Approximate derivative: %lf\n", derivative);
-    return 0;
-}
+$$
+f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}
+$$
 
 
 ### 2️ Fourth-Order Central Difference Method (O(h⁴))
