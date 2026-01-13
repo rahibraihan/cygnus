@@ -77,15 +77,33 @@ f'(x) = \cos(x)
 ---
 
 ## 📁 Repository Structure
-1. CYGNUS Report.pdf # Group assignment report (PDF)
-2. CYGNUS Report.zip # Zipped report and related files
-3. Cygnus_cpp # C++ source code
-4. Cygnus.exe # Compiled executable
-5. LICENSE # License information
-6. README.md # Project documentation
-7. error_data.txt # Numerical error data
-8. error_plot.png # Error convergence plot
-9. plot.gp # Gnuplot script
+
+1. **CYGNUS Report.pdf**  
+   (Group assignment report – PDF)
+
+2. **CYGNUS Report.zip**  
+   (Zipped report and related files)
+
+3. **Cygnus_cpp**  
+   (C++ source code)
+
+4. **Cygnus.exe**  
+   (Compiled executable)
+
+5. **LICENSE**  
+   (License information)
+
+6. **README.md**  
+   (Project documentation)
+
+7. **error_data.txt**  
+   (Numerical error data)
+
+8. **error_plot.png**  
+   (Error convergence plot)
+
+9. **plot.gp**  
+   (Gnuplot script)
 
 
 
