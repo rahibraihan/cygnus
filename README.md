@@ -1,7 +1,6 @@
 Higher-Order Methods and Richardson Extrapolation for Numerical Differentiation : 
 
 This repository contains our **group assignment on numerical differentiation techniques**, exploring how different methods compare in terms of **accuracy and convergence**.
-
 We implemented and compared various numerical differentiation methods to approximate derivatives of smooth functions.  
 The main goal was to understand how **higher-order methods improve accuracy** and how **Richardson extrapolation reduces errors**.
 
@@ -19,7 +18,7 @@ https://github.com/rahibraihan/cygnus.git
 f'(x) \approx \frac{f(x+h) - f(x-h)}{2h}
 \]
 
-- Error: **O(h²)**
+-> Error: **O(h²)**
 
 ---
 
@@ -30,7 +29,7 @@ f'(x) \approx \frac{f(x+h) - f(x-h)}{2h}
 f'(x) \approx \frac{-f(x+2h) + 8f(x+h) - 8f(x-h) + f(x-2h)}{12h}
 \]
 
-- Error: **O(h⁴)**
+-> Error: **O(h⁴)**
 
 ---
 
@@ -41,13 +40,13 @@ f'(x) \approx \frac{-f(x+2h) + 8f(x+h) - 8f(x-h) + f(x-2h)}{12h}
 D_R = \frac{4D(h/2) - D(h)}{3}
 \]
 
-- Improves accuracy without increasing computational complexity
+-> Improves accuracy without increasing computational complexity
 
 ---
 
 ### 4 Additional Analysis
-- Analyzed **errors**, **stability**, and **convergence behavior**
-- Generated **plots and tables** to visualize numerical results
+-> Analyzed **errors**, **stability**, and **convergence behavior**
+-> Generated **plots and tables** to visualize numerical results
 
 ---
 
@@ -72,8 +71,8 @@ f'(x) = \cos(x)
 
 ## ⚙️ System Requirements
 
-- **Compiler:** C++
-- **Visualization Tool:** Gnuplot
+-> **Compiler:** C++
+-> **Visualization Tool:** Gnuplot
 
 ---
 
