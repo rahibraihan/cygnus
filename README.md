@@ -12,7 +12,7 @@ https://github.com/rahibraihan/cygnus.git
 
 ## 📌 What We Did
 
-### 1️⃣ Second-Order Central Difference Method (O(h²))
+### 1️ Second-Order Central Difference Method (O(h²))
 
 **Formula:**
 \[
@@ -23,7 +23,7 @@ f'(x) \approx \frac{f(x+h) - f(x-h)}{2h}
 
 ---
 
-### 2️⃣ Fourth-Order Central Difference Method (O(h⁴))
+### 2️ Fourth-Order Central Difference Method (O(h⁴))
 
 **Formula:**
 \[
@@ -34,7 +34,7 @@ f'(x) \approx \frac{-f(x+2h) + 8f(x+h) - 8f(x-h) + f(x-2h)}{12h}
 
 ---
 
-### 3️⃣ Richardson Extrapolation
+### 3 Richardson Extrapolation
 
 **Formula:**
 \[
@@ -45,7 +45,7 @@ D_R = \frac{4D(h/2) - D(h)}{3}
 
 ---
 
-### 4️⃣ Additional Analysis
+### 4 Additional Analysis
 - Analyzed **errors**, **stability**, and **convergence behavior**
 - Generated **plots and tables** to visualize numerical results
 
@@ -78,15 +78,15 @@ f'(x) = \cos(x)
 ---
 
 ## 📁 Repository Structure
-├── CYGNUS Report.pdf # Group assignment report (PDF)
-├── CYGNUS Report.zip # Zipped report and related files
-├── Cygnus_cpp # C++ source code
-├── Cygnus.exe # Compiled executable
-├── LICENSE # License information
-├── README.md # Project documentation
-├── error_data.txt # Numerical error data
-├── error_plot.png # Error convergence plot
-└── plot.gp # Gnuplot script
+1. CYGNUS Report.pdf # Group assignment report (PDF)
+2. CYGNUS Report.zip # Zipped report and related files
+3. Cygnus_cpp # C++ source code
+4. Cygnus.exe # Compiled executable
+5. LICENSE # License information
+6. README.md # Project documentation
+7. error_data.txt # Numerical error data
+8. error_plot.png # Error convergence plot
+9. plot.gp # Gnuplot script
 
 
 
