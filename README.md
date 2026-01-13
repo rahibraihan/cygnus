@@ -94,8 +94,8 @@ f'(x) = \cos(x)
 
 ## 💡 Key Insights
 
-- Higher-order methods significantly reduce truncation error  
-- Fourth-order schemes outperform second-order schemes  
-- Richardson extrapolation improves accuracy  
-- Choosing an appropriate step size is critical for numerical stability  
+-> Higher-order methods significantly reduce truncation error  
+-> Fourth-order schemes outperform second-order schemes  
+-> Richardson extrapolation improves accuracy  
+-> Choosing an appropriate step size is critical for numerical stability  
 
