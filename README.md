@@ -64,8 +64,8 @@ Exact derivative:
 f'(x) = \cos(x)
 \]
 
-- Evaluation point: **x = 1.0**
-- Step sizes: **h = 0.1, 0.05, 0.025, ...**
+-> Evaluation point: **x = 1.0**
+-> Step sizes: **h = 0.1, 0.05, 0.025, **
 
 ---
 
