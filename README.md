@@ -24,8 +24,7 @@ https://github.com/rahibraihan/cygnus.git
 7. 
             D_R = [4D(h/2) - D(h)] / 3
    
-9. Analyzed errors, stability, and convergence behavior
-10. 
+9. Analyzed errors, stability, and convergence behavior 
 11. Generated plots and tables to visualize results
 
 ## 🧪 Test Function
