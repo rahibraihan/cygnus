@@ -32,15 +32,15 @@ https://github.com/rahibraihan/cygnus.git
 
 We used the following test function:
 
-\[
+$$
 f(x) = \sin(x)
-\]
+$$
 
 Exact derivative:
 
-\[
+$$
 f'(x) = \cos(x)
-\]
+$$
 
 -> Evaluation point: **x = 1.0**
 -> Step sizes: **h = 0.1, 0.05, 0.025, **
