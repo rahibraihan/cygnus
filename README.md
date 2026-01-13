@@ -11,12 +11,13 @@ https://github.com/rahibraihan/cygnus.git
 
 ## 📌 What We Did
 
-1. Implemented second-order central difference method (O(h²)) ​
+1. Implemented second-order central difference method (O(h²))
+2. ​
             f'(x) ≈ [f(x+h) - f(x-h)] / (2h)
    
             Error: O(h²)
-3. Implemented fourth-order central difference method (O(h⁴))
-4. 
+4. Implemented fourth-order central difference method (O(h⁴))
+5. 
             f'(x) ≈ [-f(x+2h) + 8f(x+h) - 8f(x-h) + f(x-2h)] / (12h)
    
             Error: O(h⁴)
