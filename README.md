@@ -12,20 +12,27 @@ https://github.com/rahibraihan/cygnus.git
 ## 📌 What We Did
 
 ## Implemented second-order central difference method (O(h²))
-​
+#### Formula:
+$$
+f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}
+$$
 
-   
+
+
             Error: O(h²)
+
 ## Implemented fourth-order central difference method (O(h⁴))
 #### Formula:
- $$
+$$
 f'(x) \approx \frac{-f(x + 2h) + 8f(x + h) - 8f(x - h) + f(x - 2h)}{12h}
 $$
    
             Error: O(h⁴)
-6. Applied Richardson extrapolation to improve accuracy
-7. 
-            D_R = [4D(h/2) - D(h)] / 3
+## Applied Richardson extrapolation to improve accuracy
+#### Formula:
+$$
+D_R = \frac{4D(h/2) - D(h)}{3}
+$$
    
 9. Analyzed errors, stability, and convergence behavior 
 11. Generated plots and tables to visualize results
