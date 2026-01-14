@@ -95,6 +95,16 @@ $$
 
 ---
 
+---
+
+## 🔧 How to Compile
+
+To compile the program using g++:
+
+```bash
+g++ -o cygnus Cygnus_cpp/main.cpp -lm
+
+
 ## 💡 Key Insights
 
 #### 🔵Higher-order methods significantly reduce truncation error  
