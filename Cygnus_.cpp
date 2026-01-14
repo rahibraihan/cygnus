@@ -22,12 +22,11 @@ double d4(double x, double h)
 }
 int main()
 {
-    const double x = 1.0;
-    const double h_START = 0.1;
-    const int N = 5;
+    double x = 1.0;
+    double h_start = 0.1;
+    int N = 5;
+    double exact_val = exact(x);
 
-
-    
     vector<double> h_values;
     vector<double> approx2_values;
 
@@ -40,22 +39,22 @@ int main()
     }
     ofstream file("error_data.txt");
 
-file << left << setw(10) << "# h"
-     << setw(18) << "Error_Oh2"
-     << setw(18) << "Error_Oh4"
-     << "Error_Richardson" << endl;
+    file << left << setw(10) << "# h"
+         << setw(18) << "Error_Oh2"
+         << setw(18) << "Error_Oh4"
+         << "Error_Richardson" << endl;
 
     for (int i = 0; i < N - 1; i++)
     {
         double h = h_values[i];
-        
+
         double err2 = fabs(approx2_values[i] - exact_val);
 
         double err4 = fabs(d4(x, h) - exact_val);
-     
+
         double R = (4.0 * approx2_values[i + 1] - approx2_values[i]) / 3.0;
         double errR = fabs(R - exact_val);
-   
+
         file << left << setw(10) << h
              << setw(18) << err2
              << setw(18) << err4
