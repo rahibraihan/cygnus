@@ -32,8 +32,8 @@ int main()
 
     for (int i = 0; i < N; i++)
     {
-        double approx2 = d2(n, x, h);
-        double approx4 = d4(n, x, h);
+        double approx2 = d2(f, x, h);
+        double approx4 = d4(f, x, h);
 
         double err2 = fabs(approx2 - exact_val);
         double err4 = fabs(d4(n, x, h) - exact_val);
