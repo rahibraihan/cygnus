@@ -3,24 +3,20 @@ using namespace std;
 
 using namespace std;
 
-
 double f(double x)
 {
     return sin(x);
 }
-
 
 double exact(double x)
 {
     return cos(x);
 }
 
-
 double d2(double x, double h)
 {
     return (f(x + h) - f(x - h)) / (2.0 * h);
 }
-
 
 double d4(double x, double h)
 {
@@ -54,18 +50,14 @@ file << left << setw(10) << "# h"
     for (int i = 0; i < N - 1; i++)
     {
         double h = h_values[i];
-
         
         double err2 = fabs(approx2_values[i] - exact_val);
 
-        
         double err4 = fabs(d4(x, h) - exact_val);
-
-        
+     
         double R = (4.0 * approx2_values[i + 1] - approx2_values[i]) / 3.0;
         double errR = fabs(R - exact_val);
-
-        
+   
         file << left << setw(10) << h
              << setw(18) << err2
              << setw(18) << err4
