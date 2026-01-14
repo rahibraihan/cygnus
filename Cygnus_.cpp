@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-double f(double x)
+double n(double x)
 {
     return sin(x);
 }
