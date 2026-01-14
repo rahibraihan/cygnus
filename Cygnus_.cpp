@@ -44,8 +44,12 @@ int main()
         approx2_values.push_back(d2(x, current_h));
         current_h /= 2.0;
     }
+    file << scientific << setprecision(10); 
 
-    
+file << left << setw(10) << "# h"
+     << setw(18) << "Error_Oh2"
+     << setw(18) << "Error_Oh4"
+     << "Error_Richardson" << endl;
 
     for (int i = 0; i < N - 1; i++)
     {
