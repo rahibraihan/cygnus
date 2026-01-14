@@ -22,10 +22,10 @@ double d4(double x, double h)
 }
 int main()
 {
-    double x = 1.0;
-    double h_start = 0.1;
-    int N = 5;
-    double exact_val = exact(x);
+    const double x = 1.0;
+    const double h_START = 0.1;
+    const int N = 5;
+
 
     
     vector<double> h_values;
