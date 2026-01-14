@@ -1,19 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+using namespace std;
+
+
 double f(double x)
 {
     return sin(x);
 }
+
 
 double exact(double x)
 {
     return cos(x);
 }
 
+
 double d2(double x, double h)
 {
     return (f(x + h) - f(x - h)) / (2 * h);
 }
+
 
 double d4(double x, double h)
 {
@@ -23,50 +30,53 @@ double d4(double x, double h)
 int main()
 {
     double x = 1.0;
-    double h = 0.1;
+    double h_start = 0.1;
     int N = 5;
-
     double exact_val = exact(x);
 
-    ofstream file("error_data.txt");
-    file << "# h  error_Oh2  error_Oh4  error_Richardson\n";//
+    
+    vector<double> h_values;
+    vector<double> approx2_values;
 
-    vector<double> D(N);
-
+    double current_h = h_start;
     for (int i = 0; i < N; i++)
     {
-        double approx2 = d2(x, h);
-        double approx4 = d4(x, h);
-
-        double err2 = fabs(approx2 - exact_val);
-        double err4 = fabs(approx4 - exact_val);
-
-        D[i] = approx2;
-
-        file << h << " " << err2 << " " << err4 << " ";
-
-        h /= 2.0;
+        h_values.push_back(current_h);
+        approx2_values.push_back(d2(x, current_h));
+        current_h /= 2.0;
     }
-    file.seekp(0, ios::beg);
 
-    h = 0.1;
-    file << "# h  error_Oh2  error_Oh4  error_Richardson\n";
+    ofstream file("error_data.txt");
+
+    
+    file << left << setw(10) << "# h"
+         << setw(18) << "Error_Oh2"
+         << setw(18) << "Error_Oh4"
+         << "Error_Richardson" << endl;
 
     for (int i = 0; i < N - 1; i++)
     {
-        double R = D[i + 1] + (D[i + 1] - D[i]) / (pow(2, 2) - 1);
-        double errR = fabs(R - exact_val);
+        double h = h_values[i];
 
-        double err2 = fabs(D[i] - exact_val);
+        
+        double err2 = fabs(approx2_values[i] - exact_val);
+
+        
         double err4 = fabs(d4(x, h) - exact_val);
 
-        file << h << " " << err2 << " " << err4 << " " << errR << "\n";
+        
+        double R = (4.0 * approx2_values[i + 1] - approx2_values[i]) / 3.0;
+        double errR = fabs(R - exact_val);
 
-        h /= 2.0;
+        
+        file << left << setw(10) << h
+             << setw(18) << err2
+             << setw(18) << err4
+             << errR << endl;
     }
 
     file.close();
+    cout << "Data has been successfully saved to error_data.txt" << endl;
 
-    cout << "Data saved to error_data.txt\n";
     return 0;
 }
