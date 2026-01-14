@@ -11,7 +11,7 @@ double exact(double x)
 }
 double d2(double (*f)(double), double x, double h)
 {
-    return (n(x + h) - n(x - h)) / (2 * h);
+    return (f(x + h) - f(x - h)) / (2 * h);
 }
 double d4(double (*n)(double), double x, double h)
 {
