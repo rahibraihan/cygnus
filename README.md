@@ -87,8 +87,27 @@ $$
 
 8. **error_plot.png**  
    (Error convergence plot)
+   ---
 
-9. **plot.gp**  
+## 📐 Error Calculation
+
+The absolute error is computed as:
+
+\[
+\text{Error} = | f'_{\text{numerical}}(x) - f'_{\text{exact}}(x) |
+\]
+
+where the exact derivative is \( f'(x) = \cos(x) \).
+
+Errors are calculated for:
+- Second-order central difference (O(h²))
+- Fourth-order central difference (O(h⁴))
+- Richardson extrapolation
+
+The computed error values are written to `error_data.txt`.
+
+
+10. **plot.gp**  
    (Gnuplot script)
 
 
