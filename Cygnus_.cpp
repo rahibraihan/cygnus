@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-using namespace std;
-
 double f(double x)
 {
     return sin(x);
@@ -40,7 +38,7 @@ int main()
         approx2_values.push_back(d2(x, current_h));
         current_h /= 2.0;
     }
-    file << scientific << setprecision(10); 
+    ofstream file("error_data.txt");
 
 file << left << setw(10) << "# h"
      << setw(18) << "Error_Oh2"
