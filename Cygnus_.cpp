@@ -18,13 +18,13 @@ double exact(double x)
 
 double d2(double x, double h)
 {
-    return (f(x + h) - f(x - h)) / (2 * h);
+    return (f(x + h) - f(x - h)) / (2.0 * h);
 }
 
 
 double d4(double x, double h)
 {
-    return (-f(x + 2 * h) + 8 * f(x + h) - 8 * f(x - h) + f(x - 2 * h)) / (12 * h);
+    return (-f(x + 2.0 * h) + 8.0 * f(x + h) - 8.0 * f(x - h) + f(x - 2 * h)) / (12 * h);
 }
 int main()
 {
