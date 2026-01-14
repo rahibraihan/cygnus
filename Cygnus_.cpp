@@ -55,7 +55,7 @@ int main()
         double errR = fabs(R - exact_val);
 
         double err2 = fabs(D[i] - exact_val);
-        double err4 = fabs(d4(x, h) - exact_val);
+        double err4 = fabs(d4(f,x, h) - exact_val);
 
         file << h << " " << err2 << " " << err4 << " " << errR << "\n";
 
