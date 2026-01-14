@@ -34,8 +34,8 @@ $$
 D_R = \frac{4D(h/2) - D(h)}{3}
 $$
    
-9. Analyzed errors, stability, and convergence behavior 
-11. Generated plots and tables to visualize results
+#### 🔵Analyzed errors, stability, and convergence behavior 
+#### 🔵Generated plots and tables to visualize results
 
 ## 🧪 Test Function
 
@@ -51,15 +51,15 @@ $$
 f'(x) = \cos(x)
 $$
 
--> Evaluation point: **x = 1.0**
--> Step sizes: **h = 0.1, 0.05, 0.025, **
+#### 🔵Evaluation point: **x = 1.0**
+#### 🔵Step sizes: **h = 0.1, 0.05, 0.025**
 
 ---
 
 ## ⚙️ System Requirements
 
--> **Compiler:** C++
--> **Visualization Tool:** Gnuplot
+#### **Compiler:** C++
+#### **Visualization Tool:** Gnuplot
 
 ---
 
@@ -98,10 +98,10 @@ $$
 
 ## 💡 Key Insights
 
--> Higher-order methods significantly reduce truncation error  
--> Fourth-order schemes outperform second-order schemes  
--> Richardson extrapolation improves accuracy  
--> Choosing an appropriate step size is critical for numerical stability  
+#### 🔵Higher-order methods significantly reduce truncation error  
+#### 🔵Fourth-order schemes outperform second-order schemes  
+#### 🔵Richardson extrapolation improves accuracy  
+#### 🔵Choosing an appropriate step size is critical for numerical stability  
 
 
 # cygnus
