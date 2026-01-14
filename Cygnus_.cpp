@@ -26,7 +26,6 @@ double d4(double x, double h)
 {
     return (-f(x + 2 * h) + 8 * f(x + h) - 8 * f(x - h) + f(x - 2 * h)) / (12 * h);
 }
-
 int main()
 {
     double x = 1.0;

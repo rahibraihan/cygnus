@@ -11,68 +11,55 @@ https://github.com/rahibraihan/cygnus.git
 
 ## 📌 What We Did
 
-### 1️ Second-Order Central Difference Method (O(h²))
+## 1️⃣Implemented second-order central difference method (O(h²))
+#### Formula:
+$$
+f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}
+$$
 
-**Formula:**
-\[
-f'(x) \approx \frac{f(x+h) - f(x-h)}{2h}
-\]
 
--> Error: **O(h²)**
 
----
+            Error: O(h²)
 
-### 2️ Fourth-Order Central Difference Method (O(h⁴))
-
-**Formula:**
-\[
-f'(x) \approx \frac{-f(x+2h) + 8f(x+h) - 8f(x-h) + f(x-2h)}{12h}
-\]
-
--> Error: **O(h⁴)**
-
----
-
-### 3 Richardson Extrapolation
-
-**Formula:**
-\[
+## 2️⃣Implemented fourth-order central difference method (O(h⁴))
+#### Formula:
+$$
+f'(x) \approx \frac{-f(x + 2h) + 8f(x + h) - 8f(x - h) + f(x - 2h)}{12h}
+$$
+   
+            Error: O(h⁴)
+## 3️⃣Applied Richardson extrapolation to improve accuracy
+#### Formula:
+$$
 D_R = \frac{4D(h/2) - D(h)}{3}
-\]
-
--> Improves accuracy without increasing computational complexity
-
----
-
-### 4 Additional Analysis
--> Analyzed **errors**, **stability**, and **convergence behavior**
--> Generated **plots and tables** to visualize numerical results
-
----
+$$
+   
+#### 🔵Analyzed errors, stability, and convergence behavior 
+#### 🔵Generated plots and tables to visualize results
 
 ## 🧪 Test Function
 
 We used the following test function:
 
-\[
+$$
 f(x) = \sin(x)
-\]
+$$
 
 Exact derivative:
 
-\[
+$$
 f'(x) = \cos(x)
-\]
+$$
 
--> Evaluation point: **x = 1.0**
--> Step sizes: **h = 0.1, 0.05, 0.025, **
+#### 🔵Evaluation point: **x = 1.0**
+#### 🔵Step sizes: **h = 0.1, 0.05, 0.025**
 
 ---
 
 ## ⚙️ System Requirements
 
--> **Compiler:** C++
--> **Visualization Tool:** Gnuplot
+#### **Compiler:** C++
+#### **Visualization Tool:** Gnuplot
 
 ---
 
@@ -111,10 +98,10 @@ f'(x) = \cos(x)
 
 ## 💡 Key Insights
 
--> Higher-order methods significantly reduce truncation error  
--> Fourth-order schemes outperform second-order schemes  
--> Richardson extrapolation improves accuracy  
--> Choosing an appropriate step size is critical for numerical stability  
+#### 🔵Higher-order methods significantly reduce truncation error  
+#### 🔵Fourth-order schemes outperform second-order schemes  
+#### 🔵Richardson extrapolation improves accuracy  
+#### 🔵Choosing an appropriate step size is critical for numerical stability  
 
 
 # cygnus
