@@ -9,17 +9,14 @@ double exact(double x)
 {
     return cos(x);
 }
-
-double d2(double x, double h)
+double d2(double (*f)(double), double x, double h)
 {
     return (f(x + h) - f(x - h)) / (2 * h);
 }
-
-double d4(double x, double h)
+double d4(double (*f)(double), double x, double h)
 {
     return (-f(x + 2 * h) + 8 * f(x + h) - 8 * f(x - h) + f(x - 2 * h)) / (12 * h);
 }
-
 int main()
 {
     double x = 1.0;
