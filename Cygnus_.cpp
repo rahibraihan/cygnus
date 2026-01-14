@@ -32,11 +32,11 @@ int main()
 
     for (int i = 0; i < N; i++)
     {
-        double approx2 = d2(x, h);
-        double approx4 = d4(x, h);
+        double approx2 = d2(f, x, h);
+        double approx4 = d4(f, x, h);
 
         double err2 = fabs(approx2 - exact_val);
-        double err4 = fabs(approx4 - exact_val);
+        double err4 = fabs(d4(f, x, h) - exact_val);
 
         D[i] = approx2;
 
