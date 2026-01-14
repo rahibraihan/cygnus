@@ -97,20 +97,21 @@ $$
 
 ---
 
-## 🔧 How to Compile
-
-To compile the program using g++:
-
-```bash
-g++ -o cygnus Cygnus_cpp/main.cpp -lm
-
-
 ## 💡 Key Insights
 
 #### 🔵Higher-order methods significantly reduce truncation error  
 #### 🔵Fourth-order schemes outperform second-order schemes  
 #### 🔵Richardson extrapolation improves accuracy  
 #### 🔵Choosing an appropriate step size is critical for numerical stability  
+---
+
+## 📈 How to Generate the Error Plot
+
+To generate the error convergence plot using Gnuplot:
+
+```bash
+gnuplot plot.gp
+
 
 
 # cygnus
