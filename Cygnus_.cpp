@@ -13,7 +13,7 @@ double d2(double (*f)(double), double x, double h)
 {
     return (f(x + h) - f(x - h)) / (2 * h);
 }
-double d4(double (*n)(double), double x, double h)
+double d4(double (*f)(double), double x, double h)
 {
     return (-n(x + 2 * h) + 8 * n(x + h) - 8 * n(x - h) + n(x - 2 * h)) / (12 * h);
 }
