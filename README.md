@@ -18,7 +18,6 @@ f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}
 $$
 
 
-
             Error: O(h²)
 
 ## 2️⃣Implemented fourth-order central difference method (O(h⁴))
