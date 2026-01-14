@@ -9,7 +9,7 @@ double exact(double x)
 {
     return cos(x);
 }
-double d2(double (*n)(double), double x, double h)
+double d2(double (*f)(double), double x, double h)
 {
     return (n(x + h) - n(x - h)) / (2 * h);
 }
