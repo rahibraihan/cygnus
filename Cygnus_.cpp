@@ -45,13 +45,7 @@ int main()
         current_h /= 2.0;
     }
 
-    ofstream file("error_data.txt");
-
     
-    file << left << setw(10) << "# h"
-         << setw(18) << "Error_Oh2"
-         << setw(18) << "Error_Oh4"
-         << "Error_Richardson" << endl;
 
     for (int i = 0; i < N - 1; i++)
     {
