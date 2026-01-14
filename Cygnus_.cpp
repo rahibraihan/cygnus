@@ -15,7 +15,7 @@ double d2(double (*f)(double), double x, double h)
 }
 double d4(double (*f)(double), double x, double h)
 {
-    return (-n(x + 2 * h) + 8 * n(x + h) - 8 * n(x - h) + n(x - 2 * h)) / (12 * h);
+    return (-f(x + 2 * h) + 8 * f(x + h) - 8 * f(x - h) + f(x - 2 * h)) / (12 * h);
 }
 int main()
 {
